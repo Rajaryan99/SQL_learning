@@ -24,15 +24,19 @@ const bookSchema = new mongoose.Schema({
     price: {
         type: Number,
     },
+    discount: {
+        type: Number,
+        default: 10,
+    }
 });
 
 const books = mongoose.model('books', bookSchema);
 
 
 const book1 = new books({
-    title: "Economic XII",
-    auther: "Abhijit banerjee",
-    price: 1200,
+    title: "JAVA made Easy",
+    auther: "Narsimha Karumnchi",
+    price: 700,
 });
 
 book1.save()
