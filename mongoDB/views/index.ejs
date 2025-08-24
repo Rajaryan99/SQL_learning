@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="w-full h-screen bg-zinc-900 p-10 text-white">
+        <div class="nav mb-10">
+            <a href="/read" class="text-blue-500">All Users</a>
+        </div>
+
+        <h1 text-3xl>Create user</h1>
+        <hr>
+        <form action="/create" method="post">
+            <input class="px-5 py-2 border-2  rounded-lg border-zinc-800 outline-none mt-3 bg-transparent " type="text"
+                name="name" id="" placeholder="Name">
+            <input class="px-5 py-2 border-2  rounded-lg border-zinc-800 outline-none bg-transparent " type="text"
+                name="email" id="" placeholder="email">
+            <input class="px-5 py-2 border-2  rounded-lg border-zinc-800 outline-none bg-transparent " type="text"
+                name="image" id="" placeholder="img URL">
+
+            <button class="ml-4 px-5 py-2 bg-blue-500 rounded-lg ">Create user</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
